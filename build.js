@@ -14,7 +14,7 @@ var completeImageName = registry + "/" + image + ":" + version;
 var dockerBuild = "docker build -t " + completeImageName + " .";
 execute(dockerBuild);
 
-var dockerLogin = "docker login " + registry + " --username=" + username + " --password=" + password;
+var dockerLogin = "docker login --username=" + username + " --password=" + password + " " + registry;
 execute(dockerLogin);
 
 var push = "docker push " + completeImageName;
