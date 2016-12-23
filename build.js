@@ -3,6 +3,7 @@
 var version = $ENV.VERSION;
 var username = $ENV.REGISTRY_USERNAME;
 var password = $ENV.REGISTRY_PASSWORD;
+var email = $ENV.REGISTRY_EMAIL;
 print("version: " + version);
 print("username: " + username);
 
@@ -14,7 +15,7 @@ var completeImageName = registry + "/" + image + ":" + version;
 var dockerBuild = "docker build -t " + completeImageName + " .";
 execute(dockerBuild);
 
-var dockerLogin = "docker login --username=" + username + " --password=" + password + " " + registry;
+var dockerLogin = "docker login --username=" + username + " --password=" + password + " --email=" + email + " " + registry;
 execute(dockerLogin);
 
 var push = "docker push " + completeImageName;
