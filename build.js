@@ -1,7 +1,7 @@
 #!/usr/bin/jjs -fv
 
 var version = $ENV.VERSION;
-var username = $ENV.REGISTY_USERNAME;
+var username = $ENV.REGISTRY_USERNAME;
 var password = $ENV.REGISTRY_PASSWORD;
 print("version: " + version);
 print("username: " + username);
