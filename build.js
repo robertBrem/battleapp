@@ -4,9 +4,6 @@ var version = $ENV.VERSION;
 var username = $ENV.REGISTRY_USERNAME;
 var password = $ENV.REGISTRY_PASSWORD;
 var email = $ENV.REGISTRY_EMAIL;
-print("version: " + version);
-print("username: " + username);
-
 
 var registry = "disruptor.ninja:30500";
 var image = "robertbrem/battleapp";
