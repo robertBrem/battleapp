@@ -17,9 +17,9 @@ public class UserService {
 
     public Set<User> getUsers() {
         HashSet<User> users = new HashSet<>();
-        users.add(new User("robert"));
-        users.add(new User("dan"));
-        users.add(new User("kevin"));
+        users.add(new User("Robert"));
+        users.add(new User("Dan"));
+        users.add(new User("Kevin"));
         return users;
     }
 
